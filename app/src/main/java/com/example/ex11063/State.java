@@ -15,31 +15,15 @@ public class State {
         return this.name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getCapital() {
         return this.capital;
-    }
-
-    public void setCapital(String capital) {
-        this.capital = capital;
     }
 
     public int getImageId() {
         return this.imageId;
     }
 
-    public void setImageId(int imageId) {
-        this.imageId = imageId;
-    }
-
     public String getPopulation() {
         return this.population;
-    }
-
-    public void setPopulation(String population) {
-        this.population = population;
     }
 }
