@@ -27,7 +27,7 @@
             android:id="@+id/statesSpinner"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="5" />
+            android:layout_weight="4" />
 
         <Space
             android:layout_width="0dp"
