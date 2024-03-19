@@ -1,10 +1,10 @@
 package com.example.ex11063;
 
 public class State {
-    private String name, capital;
-    private int imageId, population;
+    private String name, capital, population;
+    private int imageId;
 
-    public State(String name, String capital, int imageId, int population) {
+    public State(String name, String capital, int imageId, String population) {
         this.name = name;
         this.capital = capital;
         this.imageId = imageId;
@@ -35,11 +35,11 @@ public class State {
         this.imageId = imageId;
     }
 
-    public int getPopulation() {
+    public String getPopulation() {
         return this.population;
     }
 
-    public void setPopulation(int population) {
+    public void setPopulation(String population) {
         this.population = population;
     }
 }
