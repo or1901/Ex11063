@@ -10,6 +10,14 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+/**
+ * The main activity:
+ * displays a spinner with 7 countries, and allows to select each country and display its details
+ * in a text view.
+ * @author Ori Roitzaid <or1901 @ bs.amalnet.k12.il>
+ * @version	1
+ * @since 18/3/2024
+ */
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private Spinner statesSpinner;
     private String[] names, capitals, populations;
@@ -26,6 +34,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         initAll();
     }
 
+    /**
+     * This function initializes all the views objects, and the spinner data.
+     */
     private void initAll() {
         statesSpinner = findViewById(R.id.statesSpinner);
         stateTv = findViewById(R.id.stateTv);
@@ -54,6 +65,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         statesSpinner.setOnItemSelectedListener(this);
     }
 
+    /**
+     * This function displays a country's details in the text view, when it is selected in the
+     * spinner.
+     * @param adapterView The adapter view of the spinner.
+     * @param view The view object of the selected country(row of the spinner).
+     * @param i The selected row number.
+     * @param l The selected row number.
+     */
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
         State state = states.get(i);
